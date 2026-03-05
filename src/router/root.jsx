@@ -7,6 +7,7 @@ const About = lazy(() => import("../pages/AboutPage"));
 const Login = lazy(() => import("../pages/Login"));
 const ListPage = lazy(() => import("../pages/todo/ListPage"));
 const ReadPage = lazy(() => import("../pages/todo/ReadPage"));
+const Modify = lazy(() => import("../pages/todo/Modify"));
 
 const root = createBrowserRouter([
   {
@@ -38,6 +39,14 @@ const root = createBrowserRouter([
     element: (
       <Suspense fallback={<Loading />}>
         <ListPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/todo/modify/:tno",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <Modify />
       </Suspense>
     ),
   },

@@ -20,7 +20,6 @@
   border-radius: 8px; 
   border: 1px solid black; 
   padding: 20px; 
-  margin-bottom: 10px;
 } 
  
 /* ListComponent 내부의 스타일이 깨질 경우를 대비한 기본 설정 */ 
