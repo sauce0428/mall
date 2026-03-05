@@ -1,0 +1,85 @@
+/* 상단 바 전체 스타일 */ 
+.custom-navbar { 
+  background-color: #0d6efd; /* 부트스트랩 기본 파란색 유지 */ 
+  padding: 0.8rem 1rem; 
+  color: white; 
+  display: flex; 
+  align-items: center; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+} 
+ 
+/* 중앙 정렬 컨테이너 */ 
+.nav-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+} 
+ 
+.nav-left { 
+  display: flex; 
+  gap: 25px; 
+  align-items: center; 
+} 
+ 
+/* 링크 공통 스타일 */ 
+.nav-link { 
+  color: rgba(255, 255, 255, 0.8); 
+  text-decoration: none; 
+  font-size: 1rem; 
+  font-weight: 500; 
+} 
+ 
+.nav-link:hover { 
+  color: white; 
+} 
+ 
+/* 드롭다운 버튼 스타일 */ 
+.nav-dropdown { 
+  position: relative; 
+} 
+ 
+.dropdown-toggle { 
+  background: none; 
+  border: none; 
+  color: white; 
+  cursor: pointer; 
+  font-size: 1rem; 
+  font-weight: 500; 
+  padding: 0; 
+} 
+ 
+/* 드롭다운 실제 메뉴 박스 */ 
+.dropdown-menu { 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  background-color: white; 
+  min-width: 150px; 
+  margin-top: 10px; 
+  padding: 8px 0; 
+  border-radius: 4px; 
+  list-style: none; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  z-index: 1000; 
+} 
+ 
+.dropdown-menu li a { 
+  display: block; 
+  padding: 10px 20px; 
+  color: #333; 
+  text-decoration: none; 
+  font-size: 0.9rem; 
+} 
+ 
+.dropdown-menu li a:hover { 
+  background-color: #f8f9fa; 
+} 
+ 
+.divider { 
+  height: 1px; 
+  background-color: #dee2e6; 
+  margin: 5px 0; 
+}
