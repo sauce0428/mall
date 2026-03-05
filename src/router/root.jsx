@@ -5,6 +5,8 @@ import Loading from "../pages/Loading";
 const Main = lazy(() => import("../pages/MainPage"));
 const About = lazy(() => import("../pages/AboutPage"));
 const Login = lazy(() => import("../pages/Login"));
+const ListPage = lazy(() => import("../pages/todo/ListPage"));
+const ReadPage = lazy(() => import("../pages/todo/ReadPage"));
 
 const root = createBrowserRouter([
   {
@@ -16,7 +18,7 @@ const root = createBrowserRouter([
     ),
   },
   {
-    path: "about",
+    path: "/about",
     element: (
       <Suspense fallback={<Loading />}>
         <About />
@@ -24,10 +26,26 @@ const root = createBrowserRouter([
     ),
   },
   {
-    path: "login",
+    path: "/login",
     element: (
       <Suspense fallback={<Loading />}>
         <Login />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/todo/list",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <ListPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/todo/read/:tno",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <ReadPage />
       </Suspense>
     ),
   },

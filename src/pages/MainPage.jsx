@@ -8,7 +8,7 @@ const MainPage = () => {
       <div className="main-container">
         <Header />
         <div>
-          <Link to={"/about"}>About</Link>
+          <Link to={"/todo/list?page=3&size=20"}>List PAGE</Link>
         </div>
         <main className="content-area">
           <div className="button-wrapper">

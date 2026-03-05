@@ -35,6 +35,9 @@ export default function Header() {
                   <li>
                     <Link to="/todo/add">ADD</Link>
                   </li>
+                  <li>
+                    <Link to="/todo/read/20">READ</Link>
+                  </li>
                   <li className="divider"></li>
                   <li>
                     <Link to="#">예비용</Link>
