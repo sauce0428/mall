@@ -1,6 +1,6 @@
 /* 상단 바 전체 스타일 */ 
 .custom-navbar { 
-  background-color: #0d6efd; /* 부트스트랩 기본 파란색 유지 */ 
+  background-color: #0d6efd; 
   padding: 0.8rem 1rem; 
   color: white; 
   display: flex; 
@@ -8,7 +8,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 } 
  
-/* 중앙 정렬 컨테이너 */ 
+
 .nav-container { 
   display: flex; 
   justify-content: space-between; 
@@ -23,20 +23,31 @@
   gap: 25px; 
   align-items: center; 
 } 
+
+.nav-item,
+.login-link,
+.dropdown-toggle {
+ color: #ffffff ; 
+ text-decoration: none;
+ font-size: 1rem;
+ font-weight: 500;
+ background: none;
+ border: none;
+ cursor: pointer;
+}
  
-/* 링크 공통 스타일 */ 
 .nav-link { 
   color: rgba(255, 255, 255, 0.8); 
   text-decoration: none; 
   font-size: 1rem; 
   font-weight: 500; 
+  transition: color 0.2s; 
 } 
  
 .nav-link:hover { 
   color: white; 
 } 
  
-/* 드롭다운 버튼 스타일 */ 
 .nav-dropdown { 
   position: relative; 
 } 
@@ -45,13 +56,12 @@
   background: none; 
   border: none; 
   color: white; 
-  cursor: pointer; 
+cursor: pointer; 
   font-size: 1rem; 
   font-weight: 500; 
   padding: 0; 
 } 
  
-/* 드롭다운 실제 메뉴 박스 */ 
 .dropdown-menu { 
   position: absolute; 
   top: 100%; 

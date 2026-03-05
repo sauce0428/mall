@@ -4,6 +4,7 @@ import Loading from "../pages/Loading";
 
 const Main = lazy(() => import("../pages/MainPage"));
 const About = lazy(() => import("../pages/AboutPage"));
+const Login = lazy(() => import("../pages/Login"));
 
 const root = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ const root = createBrowserRouter([
     element: (
       <Suspense fallback={<Loading />}>
         <About />
+      </Suspense>
+    ),
+  },
+  {
+    path: "login",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <Login />
       </Suspense>
     ),
   },
