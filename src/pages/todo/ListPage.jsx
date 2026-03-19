@@ -1,6 +1,7 @@
 import "./ListPage.css";
 import Header from "../../include/Header";
 import { useSearchParams } from "react-router-dom";
+import ListComponent from "../../components/todo/ListComponent";
 
 const ListPage = () => {
   const [queryParam] = useSearchParams();
@@ -11,15 +12,10 @@ const ListPage = () => {
     <>
       <div className="main-container">
         <Header />
-
-        <p>
-          Todo List page={page} size={size}
-        </p>
-        <main className="content-area">
-          <div className="button-wrapper">
-            <button className="custom-btn-outline" type="button">
-              List Page
-            </button>
+        <main className="list-content-area">
+          <div className="list-wrapper">
+            {/* 실제 데이터 목록이 표시되는 컴포넌트 */}
+            <ListComponent />
           </div>
         </main>
       </div>
