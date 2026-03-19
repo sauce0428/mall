@@ -7,11 +7,14 @@ import {
 import "./ReadPage.css";
 import Header from "../../include/Header";
 import { useCallback } from "react";
+import ReadComponent from "../../components/todo/ReadComponent";
+import useCustomMove from "../../hooks/useCustomMove";
 
 const ReadPage = () => {
   const { tno } = useParams();
   const navigate = useNavigate();
   const [queryParams] = useSearchParams();
+  const { moveToList, moveToModify } = useCustomMove();
 
   const page = queryParams.get("page") ? parseInt(queryParams.get("page")) : 1;
   const size = queryParams.get("size") ? parseInt(queryParams.get("size")) : 10;
@@ -29,23 +32,11 @@ const ReadPage = () => {
     <>
       <div className="main-container">
         <Header />
-        <p>Readpage tno = {tno}</p>
-        <main className="content-area">
-          <div className="button-wrapper">
-            <button className="custom-btn-outline" type="button">
-              Read Page
-            </button>
-          </div>
-          <div className="button-wrapper">
-            <button
-              className="custom-btn-outline"
-              type="button"
-              onClick={() => moveModify()}
-            >
-              Modify Page 이동하기
-            </button>
-          </div>
-        </main>
+        <ReadComponent
+          tno={tno}
+          moveToList={moveToList}
+          moveToModify={moveModify}
+        />
       </div>
     </>
   );
