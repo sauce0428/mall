@@ -1,0 +1,59 @@
+/* LogoutComponent.css */
+.logout-container {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logout-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.logout-header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  font-weight: bold;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.1rem;
+}
+
+.logout-body {
+  padding: 2.5rem 2rem;
+}
+
+.logout-title {
+  font-size: 1.25rem;
+  color: #212529;
+  margin-bottom: 2rem;
+}
+
+.logout-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-logout-submit {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0d6efd;
+  background-color: transparent;
+  border: 1px solid #0d6efd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-logout-submit:hover {
+  color: #fff;
+  background-color: #0d6efd;
+}
