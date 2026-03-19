@@ -1,0 +1,47 @@
+/* FetchingModal.css */
+
+/* 전체 화면을 덮는 배경 */
+.fetching-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* 밝은 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* 모달 본체 */
+.fetching-content {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+/* 로딩 텍스트 스타일 */
+.fetching-message {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+  animation: pulse 1.5s infinite; /* 깜빡이는 효과 */
+}
+
+/* 애니메이션 정의 */
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

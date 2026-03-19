@@ -1,0 +1,38 @@
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* mt-5 (margin-top: 3rem) 및 d-grid 역할 /
+.content-area {
+  margin-top: 3rem;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+/ btn btn-outline-primary 역할 직접 구현 /
+.custom-btn-outline {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; / d-grid의 기본 동작 /
+}
+
+.custom-btn-outline:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/ 버튼을 클릭했을 때의 효과(Active) */
+.custom-btn-outline:active {
+  background-color: #0a58ca;
+  border-color: #0a53be;
+}

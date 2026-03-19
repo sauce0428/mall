@@ -1,0 +1,28 @@
+/* 전체 레이아웃 컨테이너 */ 
+.list-page-container { 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+} 
+ 
+/* 상단 Header와의 간격 (mt-5 대체) */ 
+.list-content-area { 
+  margin-top: 3rem; 
+  min-height: 80vh; /* 화면 높이를 확보하여 하단이 비어 보이지 않게 함 */ 
+}
+
+/* 목록 컴포넌트를 감싸는 영역 (d-grid 및 gap-2 대체) */ 
+.list-wrapper { 
+  display: flex; 
+  gap: 1rem; 
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  border: 1px solid black; 
+  padding: 20px; 
+} 
+ 
+/* ListComponent 내부의 스타일이 깨질 경우를 대비한 기본 설정 */ 
+.list-wrapper > div { 
+  width: 100%; 
+}

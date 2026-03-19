@@ -1,0 +1,45 @@
+/* ListComponent.css */
+
+.list-container {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* 테이블 내의 빈 공간을 완전히 제거 */
+  line-height: 1;
+}
+
+/* 행(tr)과 셀(td)의 높이를 강제로 제어 */
+.todo-table tr {
+  height: 40px; /* 원하는 행 높이를 숫자로 지정 (예: 40px) */
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 10px 10px; /* !important로 다른 스타일 덮어쓰기 */
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+  /* 텍스트가 위아래로 벌어지지 않게 고정 */
+  line-height: 1.2;
+  height: auto;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.text-center {
+  text-align: center;
+}
+/* 이미지에 나온 빨간색 글씨 스타일 */
+.highlight-text {
+  color: #ff4d4d;
+  font-size: 0.95rem;
+}
+
+/* 호버 시 색상 변경 */
+.todo-table tbody tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}

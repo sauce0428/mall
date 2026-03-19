@@ -1,0 +1,77 @@
+/* AddComponent.css */
+
+.add-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+/* 텍스트 영역(Description) 별도 설정 */
+textarea.form-control {
+  resize: vertical; /* 사용자가 세로로만 늘릴 수 있도록 설정 */
+  min-height: 120px;
+}
+
+/* 파일 업로드 입력창 스타일 */
+.form-control[type="file"] {
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* 저장 버튼 영역 */
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-save {
+  padding: 0.8rem 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-save:hover {
+  background-color: #0b5ed7;
+}

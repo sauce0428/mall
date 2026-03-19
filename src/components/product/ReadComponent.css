@@ -1,0 +1,89 @@
+/* ReadComponent.css */
+
+.read-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.read-form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.read-label {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+.read-control {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: #f8f9fa; /* 읽기 전용 강조 */
+  color: #212529;
+  box-sizing: border-box;
+}
+/* 이미지 영역 레이아웃 */
+.image-list-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px dashed #dee2e6;
+}
+
+.product-read-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* 하단 버튼 그룹 */
+.read-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2.5rem;
+}
+
+.btn-read {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-modify-nav {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-modify-nav:hover {
+  background-color: #5a6268;
+}
+
+.btn-list-nav {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.btn-list-nav:hover {
+  background-color: #138496;
+}
