@@ -5,6 +5,7 @@ import PageComponent from "../common/PageComponent";
 import "./ListComponent.css";
 import FetchingModal from "../common/FetchingModal";
 import { API_SERVER_HOST } from "../../api/todoApi";
+import useCustomLogin from "../../hooks/useCustomLogin";
 
 const host = API_SERVER_HOST;
 
@@ -26,6 +27,7 @@ const ListComponent = () => {
     useCustomMove();
   const [serverData, setServerData] = useState(initState);
   const [fetching, setFetching] = useState(false);
+  const { exceptionHandle } = useCustomLogin();
 
   useEffect(() => {
     // 마이크로 태스크 큐로 밀어넣어 렌더링 충돌 방지
@@ -41,10 +43,10 @@ const ListComponent = () => {
       .catch((err) => {
         // 에러 발생 시에도 로딩은 꺼줘야 하므로 예외 처리를 권장합니다.
         setFetching(false);
-        console.error(err);
+        exceptionHandle(err);
       });
     clearTimeout(timer);
-  }, [page, size, refresh]);
+  }, [page, size, refresh, exceptionHandle]);
 
   return (
     <div className="list-container">

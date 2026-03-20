@@ -3,6 +3,7 @@ import "./LoginComponent.css"; // CSS 분리
 import { useDispatch } from "react-redux";
 import { loginPostAsync } from "../../slices/loginSlice";
 import { useNavigate } from "react-router-dom";
+import KakaoLoginComponent from "./KakaoLoginComponent";
 import useCustomLogin from "../../hooks/useCustomLogin";
 
 const initState = {
@@ -77,6 +78,7 @@ const LoginComponent = () => {
           로그인
         </button>
       </div>
+      <KakaoLoginComponent />
     </div>
   );
 };
